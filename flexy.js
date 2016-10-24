@@ -217,7 +217,7 @@ function getDates() {
     var dates = new Array();
 
     for (var i = 0; i <= date_range; i++) {
-        var row_date = {day: today.getDate(), month: today.getMonth(), year: today.getYear()};
+        var row_date = {day: today.getDate(), month: today.getMonth(), year: today.getFullYear()};
         var fmt_date = {weekDay: weekday[today.getDay()], date: today.getDate(), month: months[today.getMonth()]};
         var is_weekend = false;
         if (today.getDay() == 0 || today.getDay() == 6) {
